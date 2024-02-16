@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 class RacingCarGameTest {
-
     private lateinit var racingCarGame: RacingCarGame
     private lateinit var cars: List<Car>
 
@@ -62,7 +61,6 @@ class RacingCarGameTest {
         repeat(2) {
             racingCarGame.move(eddyCarIndex, 4)
             racingCarGame.move(yennyCarIndex, 4)
-
         }
 
         // then

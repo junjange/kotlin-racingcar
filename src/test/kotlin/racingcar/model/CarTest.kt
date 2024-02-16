@@ -4,7 +4,6 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
 class CarTest {
-
     @Test
     fun `자동차가 있을 때, 한칸 이동시키면, 자동차의 거리는 1이 된다`() {
         // given
@@ -12,7 +11,7 @@ class CarTest {
 
         // when
         myCar.move(1)
-        
+
         // then
         assertThat(myCar.distance).isEqualTo(1)
     }

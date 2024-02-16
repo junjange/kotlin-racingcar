@@ -3,11 +3,16 @@ package racingcar.model
 import racingcar.utils.RandomNumber
 
 class RacingCarGame(private val cars: List<Car>) {
-
     fun race(): List<Car> = List(cars.size) { index -> move(index, RandomNumber.getRandomNumber()) }
 
-    fun move(index: Int, randomNumber: Int): Car {
-        if (randomNumber >= MOVE_NUMBER) cars[index].move(STEP)
+    fun move(
+        index: Int,
+        randomNumber: Int,
+    ): Car {
+        if (randomNumber >= MOVE_NUMBER) {
+            cars[index].move(STEP)
+        }
+
         return cars[index]
     }
 
